@@ -51,6 +51,65 @@ header {
 }
 // header
 
+// banner
+
+#banner {
+    padding: 0px 50px;
+    background-image: url(./imagenes/muskroom-9XgE5-eyOW8-unsplash.jpg);
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner::before {
+    content: "";
+    background-color: rgba(77, 77, 92, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    left: 0;
+}
+.contenidoBanner {
+    position: relative;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3 {
+        font-size: 30px;
+        font-weight: 400;
+        padding: 10px 0px;
+        span {
+            font-weight: 600;
+        }
+    }
+    .botonEmpezar {
+        text-decoration: none;
+        color: #fff;
+        border: 1px solid #4d4d5c;
+        padding: 20px 40px;
+        align-self: baseline;
+        transition: all ease-in-out 0.2s;
+        text-transform: uppercase;
+    }
+    .botonEmpezar:hover {
+        background-color: #6cc09070;
+    }
+}
+
+// banner
+
+// personas
+
+#personas{
+    img{
+        width: 150px;
+    }
+}
+
+// personas
+
 // media queries
 @media (max-width: 768px) {
     // header
@@ -63,12 +122,12 @@ header {
         width: 100%;
         height: 100vh;
         background-color: #4d4d5c;
-        right:-100%;
+        right: -100%;
         top: 0%;
         text-align: center;
         padding: 100px 0px;
         z-index: 100;
-        transition: 0.8s;
+        transition: 0.5s;
         a {
             display: block;
             padding: 20px;
@@ -79,7 +138,7 @@ header {
         top: 30px;
         right: 40px;
     }
-    #check:checked ~ .menu{
+    #check:checked ~ .menu {
         right: 0;
     }
 }

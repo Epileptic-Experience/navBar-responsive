@@ -49,6 +49,56 @@ header {
   display: none;
 }
 
+#banner {
+  padding: 0px 50px;
+  background-image: url(./imagenes/muskroom-9XgE5-eyOW8-unsplash.jpg);
+  height: 45vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner::before {
+  content: "";
+  background-color: rgba(77, 77, 92, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 45vh;
+  left: 0;
+}
+
+.contenidoBanner {
+  position: relative;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contenidoBanner h3 {
+  font-size: 30px;
+  font-weight: 400;
+  padding: 10px 0px;
+}
+.contenidoBanner h3 span {
+  font-weight: 600;
+}
+.contenidoBanner .botonEmpezar {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #4d4d5c;
+  padding: 20px 40px;
+  align-self: baseline;
+  transition: all ease-in-out 0.2s;
+  text-transform: uppercase;
+}
+.contenidoBanner .botonEmpezar:hover {
+  background-color: rgba(108, 192, 144, 0.4392156863);
+}
+
+#personas img {
+  width: 150px;
+}
+
 @media (max-width: 768px) {
   .mostrarMenu,
 .esconderMenu {
@@ -64,7 +114,7 @@ header {
     text-align: center;
     padding: 100px 0px;
     z-index: 100;
-    transition: 0.8s;
+    transition: 0.5s;
   }
   .menu a {
     display: block;
